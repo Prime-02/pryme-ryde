@@ -73,7 +73,7 @@ const signUp = () => {
           body: JSON.stringify({
             name: form.name,
             email: form.email,
-            clerk_ird: signUpAttempt?.createdUserId ,
+            clerkId: signUpAttempt?.createdUserId ,
           }),
         } )
         await setActive({ session: signUpAttempt.createdSessionId });

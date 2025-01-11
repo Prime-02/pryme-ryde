@@ -1,6 +1,6 @@
 import React from "react";
 import {  Tabs } from "expo-router";
-import { Image, ImageSourcePropType, Text, View } from "react-native";
+import { Image, ImageSourcePropType, StatusBar, Text, View } from "react-native";
 import { icons } from "@/constants";
 
 const TabIcon = ({
@@ -23,6 +23,7 @@ const TabIcon = ({
 
 const _layout = () => {
   return (
+    <>
    <Tabs initialRouteName="home" screenOptions={{
      headerShown: false,
      tabBarActiveTintColor: "blue",
@@ -86,6 +87,8 @@ const _layout = () => {
       }}
       />  
    </Tabs>
+   <StatusBar barStyle={"dark-content"}/>
+        </>
   );
 };
 
